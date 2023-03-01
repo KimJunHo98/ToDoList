@@ -8,7 +8,7 @@ function getClock(){
     minutes = String(date.getMinutes()).padStart(2, "0"),
     seconds = String(date.getSeconds()).padStart(2, "0");
     
-    clock.innerText = `${hours}:${minutes}:${seconds}`;
+    clock.innerText = `${hours} : ${minutes} : ${seconds}`;
 }
 // getClock()를 즉시 호출
 getClock(); 

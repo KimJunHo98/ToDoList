@@ -11,33 +11,80 @@
 </head>
 <body>
     <div class="wrap">
-        <div id="login">
-            <form id="login_form" class="hidden">
-                <input type="text" placeholder="What is your name?" required maxlength="15">
-                <input type="submit" value="Log In">
-            </form>
+        <div class="container">
+            <!-- header -->
+            <header id="header">
+                <div id="sec_login">
+                    <h1 id="greeting" class="hidden"></h1>
+                    <div id="login">
+                        <form id="login_form" class="hidden">
+                            <input type="text" placeholder="What is your name?" required maxlength="15">
+                            <input class="login_btn" type="submit" value="Log In">
+                        </form>
+                    </div>
+                </div>
+                <div id="weather">
+                    <span class="city"></span>
+                    <span class="weather"></span>
+                </div>
+            </header>
+            <!-- //header -->
+            <!-- clock -->
+            <section id="sec_clock">
+                <h2 id="clock">00:00</h2>
+            </section>
+            <!-- //clock -->
+            <!-- todo_calendar -->
+            <section id="todo_calendar">
+                <div id="todo">
+                    <form class="todo_form">
+                        <input type="text" placeholder="Write a To Do and Press Enter" required>
+                    </form>
+                    <div class="row">
+                        <ul class="todo_list"></ul>
+                    </div>
+                </div>
+                <div id="calendar">
+                    <div class="row">
+                        <div class="cal_nav">
+                            <a href="#" class="nav-btn go-prev">prev</a>
+                            <div class="yearMonth"></div>
+                            <a href="#" class="nav-btn go-next">next</a>
+                        </div>
+                        <div class="cal_wrap">
+                            <div class="days">
+                                <div class="day">MON</div>
+                                <div class="day">TUE</div>
+                                <div class="day">WED</div>
+                                <div class="day">THU</div>
+                                <div class="day">FRI</div>
+                                <div class="day">SAT</div>
+                                <div class="day">SUN</div>
+                            </div>
+                            <div class="dates"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sec_quote">
+                <div id="quote">
+                    <span class="top"></span>
+                    <span class="bottom"></span>
+                </div>
+            </section>
         </div>
-        <h1 id="greeting" class="hidden"></h1>
-        <h2 id="clock">00:00</h2>
-        <div id="todo">
-            <form class="todo_form">
-                <input type="text" placeholder="Write a To Do and Press Enter" required>
-            </form>
-            <ul class="todo_list"></ul>
-        </div>
-        <div id="quote">
-            <span class="top"></span>
-            <span class="bottom"></span>
-        </div>
+        <!-- //todo_calendar -->
         <div class="bgImg">
             <img src="img/bgimg.jpg" alt="">
         </div>
     </div>
 
     <!-- script -->
-    <script src="js/greeting.js"></script>
+    <script src="js/login.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/calendar.js"></script>
 </body>
 </html>

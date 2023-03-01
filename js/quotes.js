@@ -49,7 +49,6 @@ toDayQuote = quotes[parseInt(Math.random() * quotes.length)];
     round(): 소수점을 반올림 반내림해서 보여줌
     ceil(): 소수점이 0이 아니면 무조건 반올림해서 보여줌
     floor(): 소수점을 무조건 반내림 해서 보여줌
-    parseInt(): 소수점을 제거한 정수만 보여줌
 */
 
 quote.innerText = toDayQuote.quote;
